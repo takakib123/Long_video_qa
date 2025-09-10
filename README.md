@@ -5,7 +5,7 @@ Long Video question answering(LVQA) is a challenging task for vision language mo
 
 ## Method
 
-1. First, frames are selected using depth-first and breadth-first search with the Videotree method.  
+1. First, frames are selected using depth-expansion and breadth-expansion to create frame clusters with the Videotree method.  
 2. Videotree selects a number frames using clusters and then pass to an LLM to generate answer. We took the same approach, with a VLM. Since there are too many frames to pass directly to the VLM, we further iteratively find similarity between two frames and reduce redundant frames
 
 
